@@ -1,8 +1,7 @@
-package com.ezio.plugin;
+package com.ezio.plugin.language;
 
+import com.ezio.plugin.icons.PlantUMLIcons;
 import com.intellij.openapi.fileTypes.LanguageFileType;
-import com.intellij.openapi.util.NlsContexts.Label;
-import com.intellij.openapi.util.NlsSafe;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -27,13 +26,13 @@ public class PlantUMLFileType extends LanguageFileType {
     }
 
     @Override
-    public @Label @NotNull String getDescription() {
+    public @NotNull String getDescription() {
         return "PlantUML language file";
     }
 
     @Override
-    public @NlsSafe @NotNull String getDefaultExtension() {
-        return "plant";
+    public  @NotNull String getDefaultExtension() {
+        return "puml";
     }
 
     @Override

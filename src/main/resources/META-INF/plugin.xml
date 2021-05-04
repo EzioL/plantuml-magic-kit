@@ -14,8 +14,12 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
-        <fileType name="PlantUML File" implementationClass="com.ezio.plugin.PlantUMLFileType"
+        <fileType name="PlantUML File" implementationClass="com.ezio.plugin.language.PlantUMLFileType"
                   fieldName="INSTANCE" language="PlantUML" extensions="puml"/>
+
+        <lang.syntaxHighlighterFactory language="PlantUML"
+                                       implementationClass="com.ezio.plugin.language.SimpleSyntaxHighlighterFactory"/>
+        <colorSettingsPage implementation="com.ezio.plugin.language.PlantUMLColorSettingsPage"/>
 
     </extensions>
 

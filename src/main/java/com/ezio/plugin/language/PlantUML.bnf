@@ -1,0 +1,20 @@
+{
+  parserClass="org.intellij.sdk.language.parser.SimpleParser"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="PlantUML"
+  psiImplClassSuffix="Impl"
+  psiPackage="com.ezio.plugin.language.psi"
+  psiImplPackage="com.ezio.plugin.language.psi.impl"
+
+  elementTypeHolderClass="com.ezio.plugin.language.psi.PlantUMLTypes"
+  elementTypeClass="com.ezio.plugin.language.psi.PlantUMLElementType"
+  tokenTypeClass="com.ezio.plugin.language.psi.PlantUMLTokenType"
+}
+
+simpleFile ::= item_*
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY

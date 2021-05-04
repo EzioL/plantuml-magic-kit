@@ -1,7 +1,9 @@
 plugins {
     id 'java'
     id 'org.jetbrains.intellij' version '0.7.3'
+   // id 'org.jetbrains.grammarkit' version '2021.1.2'
 }
+//apply plugin: 'org.jetbrains.grammarkit'
 
 group 'com.ezio'
 version '1.0-SNAPSHOT'
@@ -20,8 +22,8 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2021.1.1'
-  //  version '2020.1.4'
+    //version '2021.1.1'
+    version '2020.1.1'
 }
 patchPluginXml {
     changeNotes """

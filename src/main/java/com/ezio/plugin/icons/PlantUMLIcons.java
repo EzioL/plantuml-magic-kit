@@ -1,4 +1,4 @@
-package com.ezio.plugin;
+package com.ezio.plugin.icons;
 
 import com.intellij.openapi.util.IconLoader;
 
@@ -10,6 +10,6 @@ import javax.swing.*;
  */
 public class PlantUMLIcons {
 
-    public static final Icon FILE = IconLoader.getIcon("/icons/jar-gray.png");
+    public static final Icon FILE = IconLoader.getIcon("/icons/file1.png");
 
 }

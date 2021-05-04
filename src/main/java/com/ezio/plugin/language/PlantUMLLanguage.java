@@ -1,4 +1,4 @@
-package com.ezio.plugin;
+package com.ezio.plugin.language;
 
 import com.intellij.lang.Language;
 
